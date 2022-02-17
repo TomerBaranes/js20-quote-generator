@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 90vh;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(https://www.pwc.com/us/en/services/consulting/cybersecurity/library/assets/2020-dti-pulse-survey-animation.gif);
+}
+
+.quote-container {
+  max-width: 768px;
+  width: auto;
+}
+
+.quote-text {
+  font-size: 2.75rem;
+  margin-bottom: 16px;
+  position: relative;
+  background-color: rgba(221, 221, 221, 0.829);
+}
+
+.fixer-text {
+  background-color: rgba(221, 221, 221, 0.829);
+}
+
+.quote-author {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.long-quote {
+  font-size: 2rem;
+}
+
+/* button css */
+
+.quote-button {
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+.quote-button:hover {
+  background: linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+  background-color: #e9e9e9;
+}
+.quote-button:active {
+  position: relative;
+  top: 1px;
+}
+
+/* fixer css */
+
+.fixer {
+  position: absolute;
+  bottom: 15px;
+}
+
+.dark {
+  color: black;
+}
+
+/* spinner css */
+
+.loading-spinner {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.loading-spinner:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: rgb(0, 0, 0) transparent rgb(0, 0, 0) transparent;
+  animation: loading-spinner 1.2s linear infinite;
+}
+@keyframes loading-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
